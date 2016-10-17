@@ -1,8 +1,15 @@
 package exampleHelper;
 
+/**
+ * @author: joseflavio
+ */
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * ArrayBit64Helper class if for create an array from an String
+ */
 class ArrayBit64Helper{
     public static ArrayList<String> getArray(String num){
         ArrayList<String> myArray = new ArrayList<>();
@@ -13,6 +20,9 @@ class ArrayBit64Helper{
     }
 }
 
+/**
+ * CapicuaHelper contains method for check if String value (does not matter whether it is number) is capicua
+ */
 class CapicuaHelper{
     public static int getInteger(char integer){
         return (String.valueOf(integer).equals("")) ? 0: Integer.parseInt(String.valueOf(integer)) ;
@@ -37,6 +47,9 @@ class CapicuaHelper{
     }
 }
 
+/**
+ * static variables for message
+ */
 class MessageHelper{
     public static final String STARTER_MESSAGE = "Escribe algo para saber si es capicúa: ";
     public static final String ERROR_MESSAGE = "NO es capicúa";
